@@ -76,4 +76,4 @@ export function convertRates (base, target) {
   }
 }
 
-fetching_value: action.payload
+// fetching_value: action.payload

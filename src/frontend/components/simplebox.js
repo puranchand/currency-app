@@ -1,8 +1,7 @@
 import React from 'react';
 import { getCurrency ,selectCurrency, convertRates} from '../actions/actions';
 import {connect} from 'react-redux';
-
-
+import SymbolList from './symbolList';
 
 
 class SimpleBox extends React.Component{
@@ -26,7 +25,7 @@ class SimpleBox extends React.Component{
 
    
 	componentWillMount() {
-		this.props.dispatch(selectCurrency())
+		this.props.dispatch(selectCurrency());
 	}
 	
    
@@ -57,21 +56,16 @@ class SimpleBox extends React.Component{
   		}
   	}
 
-
-
-
 	render() {
 		const {currency} = this.props.Conecter
 		const {select_c} = this.props.Conecter
 
-		console.log(this.state.target)
-currency
 		let i = 0;
 		
 			return(
 				<div className='container'>
 						
-					<h4>Currency Value</h4>
+					<h4>Current Value of Currency</h4>
 
 					<div>
 
@@ -84,8 +78,6 @@ currency
 							</div>
 						</div>
 
-						
-
 						<div className="row">
 							Amount
 			    			<input type = "number" min={1} value = {this.state.amount} onChange = {(e) => this.updateCurrency(e)}/>
@@ -93,23 +85,18 @@ currency
 
 						<div>
 						   <h5 className="target-amount u-text-center">
-							{this.state.amount}&nbsp;{this.state.base} &nbsp; &emsp;=&emsp;
+							{this.state.amount}&nbsp;{this.state.base} &nbsp; &emsp;= &emsp;
 							{this.state.amount * this.props.Conecter.fetching_value}
 							{this.state.target}
 							</h5>
 						</div>
 							<p>
 								<h6>
-									Made by <a href='#'>Puran Chand </a> and <a href='###'>   hcode here</a>
+									Made by <a href='#'>Puran Chand </a> and <a href='###'>code is here</a>
 								</h6>
 							</p>
-            		</div>
-						
-					
-				
+            			</div>
 				</div>		
-	
-			
 		)
 	}
 }
