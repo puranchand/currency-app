@@ -71,9 +71,11 @@ class SimpleBox extends React.Component{
 
 						<div className="row">
 							<div className="one-half column" >
+							To
 							<SymbolList value={this.state.base} onChange={this.onSelect} name='base'/>
 							</div>
 							<div className="one-half column" >
+							From
 							<SymbolList value_t={this.state.target} onChange_t={this.onSetValue} name_t='target'/>
 							</div>
 						</div>
