@@ -65,7 +65,7 @@ class SimpleBox extends React.Component{
 			return(
 				<div className='container'>
 						
-					<h4>Current Value of Currency</h4>
+					<h4>Current Value of <br />{this.state.base} to {this.state.target}</h4>
 
 					<div>
 
@@ -94,7 +94,7 @@ class SimpleBox extends React.Component{
 						</div>
 							<p>
 								<h6>
-									Made by <a href='#'>Puran Chand </a> and <a href='###'>code is here</a>
+									Made by <a href='#'>Puran Chand </a> and <a href='https://github.com/puranchand/currency-app'>code is here</a>
 								</h6>
 							</p>
             			</div>
