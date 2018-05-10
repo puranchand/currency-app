@@ -65,7 +65,7 @@ class SimpleBox extends React.Component{
 			return(
 				<div className='container'>
 						
-					<h4>Current Value of <br />{this.state.base} to {this.state.target}</h4>
+					<h4>Current Value of <br /> <span className="values">{this.state.base}</span> to <span className="values">{this.state.target}</span></h4>
 
 					<div>
 

@@ -1,9 +1,11 @@
 *{
-
 	margin: 0 auto;
 	width: 100%;
-	max-width: 400px;
 	text-align: justify;
+}
+
+html {
+    height: 100%;
 }
 
 h4{
@@ -11,13 +13,32 @@ h4{
 	text-align: center;
 }
 
-body{
-	margin-top: 200px;
-}
 h6{
 	text-align: center;
 }
 
 h5{
 	text-align: center;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 25% !important;
+}
+
+span.values {
+    font-weight: 400;
+    font-family: inherit;
+}
+
+@media(max-width: 800px){
+    .container {
+        width: 80% !important;
+    }
 }
